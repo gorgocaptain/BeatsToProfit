@@ -1,0 +1,278 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+
+h1 {
+  font-size: 175px;
+  letter-spacing: 10px;
+  
+  margin-top: -10px;
+  
+  
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  margin-top: -150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0; 
+
+  background-image: 
+  url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3Crect width='2250' height='900' fill='white' fill-opacity='0.5'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 110% auto;
+  background-position: center;
+  box-shadow: 0px 5px 0px black;
+  
+color: rgba(0, 0, 0, 0);
+  z-index: 1000; /* Ensure it's on top of other content */
+ 
+
+  height: 100px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  padding: 20px 0; /* Add padding for spacing */
+}
+
+.nav-link {
+  display: inline-block;
+  font-size: 50px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 400;
+  margin: 20px 0; /* Add margin for spacing */
+  color: #333;
+}
+h3 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 20px 0; /* Add margin for spacing */
+  color: #333;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 1.6;
+  margin: 10px 0; /* Margin above and below */
+  color: black;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between; /* Align items to the left and right */
+  align-items: center; /* Center vertically */
+  padding: 50px 200px; /* Padding for spacing */
+  box-shadow: 0px 5px 0px black;
+  
+}
+
+.text-content {
+  width: 60%; /* Occupy 60% of the width for text */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Center the image */
+  align-items: center; /* Center the image vertically */
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* Circular image */
+  border: 5px solid #333; /* Border for the image */
+}
+
+li {
+  list-style-type: none;
+}
+
+.content-section {
+  padding: 50px 100px; /* Add padding for each section */
+  background-color: #f9f9f9; /* Light background for contrast */
+  margin: 20px 0; /* Spacing between sections */
+
+  
+}
+.about-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns items at the start */
+  position: relative; /* So the line stays between the columns */
+  
+}
+
+.column {
+  width: 45%; /* Adjust width to leave space for the line */
+  padding: 20px;
+  background-color: #ffffff;
+  background-image: 
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2250' height='900'%3E%3Crect width='2250' height='900' fill='%23FFFFFF'/%3E%3Cpath d='M0 500 Q1125 250 2250 500 T4500 500' stroke='%23C0C0C0' stroke-width='10' fill='transparent'/%3E%3C/svg%3E");
+background-size: 300% auto;
+background-position: center;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.divider-line {
+  position: absolute;
+  width: 5px;
+  background-color: rgba(255, 0, 0, 0);
+  
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%); /* Center the line */
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 400;
+  margin: 20px 0;
+  color: #333;
+  width: 45%; /* Align it with the first column */
+}
+
+
+.column h3 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.column p {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: black;
+}
+.title{
+  width: 550px;
+}
+
+.us{
+  width: 580px;
+  height: 300px;
+  object-fit: cover;
+
+}
+.skibidi-toilet{
+  margin-top: -40px;
+}
+.desc-container{
+
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 20px;
+  transition: .3s ease-in-out;
+}
+.desc-container:hover{
+  transform: translateY(-10px);
+}
+
+/* Navigation links */
+.nav-link {
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transition to normal state */
+}
+
+.nav-link:hover {
+  
+  transform: translateY(-5px);
+}
+
+/* Logo image */
+.logo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition to normal state */
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Column hover effect */
+.column {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition to normal state */
+}
+
+.column:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fancy {
+  
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size: 110% auto;
+    background-position: center;
+    color: rgba(0, 0, 0, 0.256);
+    text-shadow: 5px 5px 0px black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: .2s ease-in-out;
+  }
+  
+}
+.fancy:hover{
+  text-shadow: 5px -10px 0px rgb(0, 0, 0);
+}
+
+/* Heading 2 hover effect */
+h2 {
+  transition: color 0.3s ease; /* Add transition to normal state */
+}
+
+h2:hover {
+  color: #00a181;
+}
+
+/* Image container hover effect */
+.image-container .logo {
+  transition: transform 0.6s ease; /* Add transition to normal state */
+}
+
+.image-container:hover .logo {
+  transform: rotate(360deg);
+}
+
+.desc-text{
+  width: 580px;
+  font-size: 20px;
+}
+#home{
+  padding: 100px;
+}
+i{
+  margin-right: 20px;
+}
